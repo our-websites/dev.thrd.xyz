@@ -563,7 +563,7 @@ footer a:hover {
     // Fetch stats from API
     async function loadStats() {
         try {
-            const response = await fetch('https://api.thrd.xyz/total');
+            const response = await fetch('https://devapi.thrd.xyz/total');
             if (response.ok) {
                 const data = await response.json();
                 document.getElementById('totalBots').textContent = data.bots || 0;
