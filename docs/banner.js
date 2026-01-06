@@ -3,7 +3,7 @@ async function loadBanner() {
   let banner = document.getElementById(bannerId);
 
   try {
-    const response = await fetch("https://api.thrd.xyz/banner");
+    const response = await fetch("https://devapi.thrd.xyz/banner");
     const data = await response.json();
     const bannerText = data.banner || "No set banner";
 
