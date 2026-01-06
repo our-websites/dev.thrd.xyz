@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-adsense-account" content="ca-pub-5047354657362321">
-<title>Thrd Hosting - Discord Bot Hosting</title>
+<title>Thrd Hosting</title>
 
-<!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="https://thrd.xyz/favicon.ico">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -432,10 +431,10 @@ footer a:hover {
 }
 </style>
 
-<meta property="og:title" content="Thrd Hosting" />
-<meta property="og:description" content="Thrd Hosting offers lightning-fast secure and scalable hosting for discord bots." />
-<meta property="og:image" content="https://thrd.xyz/logo.png" />
-<meta property="og:url" content="https://thrd.xyz" />
+<meta property="og:title" content="[Dev] Thrd Hosting" />
+<meta property="og:description" content="Thrd Hosting offers lightning-fast secure and scalable hosting for discord bots. (Development Version)" />
+<meta property="og:image" content="https://dev.thrd.xyz/images/logo.png" />
+<meta property="og:url" content="https://dev.thrd.xyz" />
 <meta property="og:type" content="website" />
 </head>
 <body>
@@ -443,7 +442,7 @@ footer a:hover {
 
 <header>
     <div class="header-left">
-        <img src="https://thrd.xyz/logo.png" alt="Thrd Logo">
+        <img src="https://dev.thrd.xyz/images/logo.png" alt="Thrd Logo">
         <h1>Thrd Hosting</h1>
     </div>
     <div class="header-right">
@@ -521,7 +520,7 @@ footer a:hover {
         <a href="https://www.github.com/l-amb" target="_blank" class="team-member">
             <div class="team-member-avatar"><img src="https://github.com/l-amb.png" alt="l-amb"></div>
             <h3>lamb</h3>
-            <p class="role">Lead Developer</p>
+            <p class="role">Developer</p>
         </a>
         <a href="https://www.github.com/lecanact" target="_blank" class="team-member">
             <div class="team-member-avatar"><img src="https://github.com/lecanact.png" alt="lecanact"></div>
@@ -536,7 +535,6 @@ footer a:hover {
     </div>
 </section>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5047354657362321" crossorigin="anonymous"></script>
-    <!-- Ad #1 -->
     <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-5047354657362321"
@@ -555,12 +553,11 @@ footer a:hover {
 </footer>
 
 <script>
-    document.getElementById("footer-text").textContent = `© ${new Date().getFullYear()} Spooky Inc. All Rights Reserved.`;</script>
+    document.getElementById("footer-text").textContent = `© 2025-${new Date().getFullYear()} Spooky Inc. All Rights Reserved.`;</script>
 <script>
     document.getElementById("loginBtn").onclick = () => window.location.href = '/login';
     document.getElementById("getStartedBtn").onclick = () => window.location.href = '/login';
 
-    // Fetch stats from API
     async function loadStats() {
         try {
             const response = await fetch('https://devapi.thrd.xyz/total');
@@ -570,15 +567,13 @@ footer a:hover {
                 document.getElementById('totalUsers').textContent = data.users || 0;
             }
         } catch (error) {
-            console.log('Stats API not available yet, using defaults');
-            document.getElementById('totalBots').textContent = '21';
-            document.getElementById('totalUsers').textContent = '20';
+            document.getElementById('totalBots').textContent = '-';
+            document.getElementById('totalUsers').textContent = '-';
         }
     }
 
     loadStats();
 
-    // Card tilt effect
     const cards = document.querySelectorAll('.card, .feature-card, .team-member');
 
     cards.forEach(card => {
