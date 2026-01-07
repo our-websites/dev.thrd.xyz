@@ -76,7 +76,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
     .catch(() => ({ url: '', key: '' }));
 
   if (!SUPABASE_URL || !SUPABASE_KEY) {
-    window.location.href = "https://thrd.xyz/";
+    window.location.href = "https://dev.thrd.xyz/";
   }
 
   const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
