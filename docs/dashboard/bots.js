@@ -43,7 +43,7 @@ async function GetUsersBots() {
         let botName = "Thrd Status";
         new_bot_card.querySelector("#bot-name").textContent = botName;
         new_bot_card.querySelector("#bot-status").textContent = "Click Here To Check The Thrd Status Page For More info!";
-        new_bot_card.querySelector("#bot-id").textContent = "Bot ID: NaN";
+        new_bot_card.querySelector("#bot-id").textContent = "0h 0m 0s";
         new_bot_card.hidden = false;
         new_bot_card.onclick = () => {
           window.location.href = `https://status.thrd.xyz`;

@@ -4,8 +4,8 @@ const returnredirect = document.querySelector(".btn");
 
 if (page.includes("dashboard")) {
   returnDiv.innerText = "Back To Dashboard";
-  returnredirect.href = "https://thrd.xyz/dashboard";
+  returnredirect.href = "https://dev.thrd.xyz/dashboard";
 } else {
   returnDiv.innerText = "Back To Home";
-  returnredirect.href = "https://thrd.xyz";
+  returnredirect.href = "https://dev.thrd.xyz";
 }
