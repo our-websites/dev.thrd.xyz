@@ -287,7 +287,7 @@ a {text-decoration:none;color:inherit;}
   <div class="toggle-btn" id="toggleSidebar"><i class="fas fa-angle-left"></i></div>
 
   <div class="sidebar-header">
-    <img src="https://thrd.xyz/logo.png" alt="Logo">
+    <img src="/images/favicon.png" alt="Logo">
     <span class="brand-name">Thrd</span>
   </div>
 
@@ -299,12 +299,12 @@ a {text-decoration:none;color:inherit;}
 
   <div class="nav-section">
     <div class="nav-section-title">Main</div>
-    <a href="https://thrd.xyz/dashboard" class="nav-btn active">
+    <a href="/dashboard" class="nav-btn active">
       <i class="fas fa-chart-line"></i>
       <span>Dashboard</span>
     </a>
     
-    <a href="https://thrd.xyz/dashboard/bots" class="nav-btn">
+    <a href="/dashboard/bots" class="nav-btn">
       <i class="fas fa-robot"></i>
       <span>Bots</span>
     </a>
@@ -312,9 +312,9 @@ a {text-decoration:none;color:inherit;}
 
   <div class="nav-section">
     <div class="nav-section-title">Settings</div>
-    <a href="https://thrd.xyz/dashboard/keys" class="nav-btn">
+    <a href="/dashboard/keys" class="nav-btn">
       <i class="fas fa-key"></i>
-      <span>API Keys</span>
+      <span>Keys</span>
     </a>
   </div>
 
@@ -327,7 +327,7 @@ a {text-decoration:none;color:inherit;}
 <div class="main">
   <div class="main-header">
     <div>
-      <h1 id="greeting">Welcome back!</h1>
+      <h1 id="greeting">Welcome back, user</h1>
       <div class="time-greeting" id="timeGreeting"></div>
     </div>
   </div>
@@ -408,6 +408,7 @@ function updateGreeting() {
   document.getElementById('userAvatar').src = user.user_metadata?.avatar_url || "https://cdn.discordapp.com/embed/avatars/0.png";
   document.getElementById('userName').textContent = user.user_metadata?.full_name || user.email;
   document.getElementById('userEmail').textContent = user.email;
+  document.getElementById('greeting').textContent = "Welcome back, " + (user.user_metadata?.full_name || user.email);
 
   const userId = user.id;
   
